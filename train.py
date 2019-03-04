@@ -8,7 +8,7 @@ import argparse
 from model.unet import UNet
 
 parser = argparse.ArgumentParser(description='Train')
-parser.add_argument('--experiment_dir', dest='experiment_dir', required=True,
+parser.add_argument('--experiment_dir', dest='experiment_dir', default='./experiment', required=True,
                     help='experiment directory, data, samples,checkpoints,etc')
 parser.add_argument('--experiment_id', dest='experiment_id', type=int, default=0,
                     help='sequence id for the experiments you prepare to run')
